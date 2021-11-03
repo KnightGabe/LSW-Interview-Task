@@ -65,7 +65,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CharacterWardrobe.cs" />
     <Compile Include="Assets\Scripts\Clothing.cs" />
+    <Compile Include="Assets\Scripts\ClothingItem.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\SlotSetter.cs" />
     <Compile Include="Assets\Scripts\TopDownBaseCharacter.cs" />
     <Compile Include="Assets\Scripts\TopDownCharacterController.cs" />
     <Compile Include="Assets\Scripts\UIController.cs" />

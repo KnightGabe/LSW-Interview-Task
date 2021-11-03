@@ -15,7 +15,10 @@ public class TopDownCharacterController : TopDownBaseCharacter
     public bool canMove = true;
 
     //we will need the rigidbody to control movement
-    public Rigidbody2D rigidbody;
+    public Rigidbody2D rigid;
+
+    //reference to player equipment inventory
+    public CharacterWardrobe equipment;
 
     private void Awake()
     {
@@ -35,7 +38,7 @@ public class TopDownCharacterController : TopDownBaseCharacter
 
     protected void MoveCharacter(Vector2 movement)
     {
-        rigidbody.velocity = movement * movementSpeed;
+        rigid.velocity = movement * movementSpeed;
         currentAnimator.SetBool("Moving", movement.magnitude > 0.1f);
     }
 
@@ -51,7 +54,7 @@ public class TopDownCharacterController : TopDownBaseCharacter
             //if movement is being deactivated, stop animation and movement
             if (!canMove)
             {
-                rigidbody.velocity = Vector2.zero;
+                rigid.velocity = Vector2.zero;
                 currentAnimator.SetBool("Moving", false);
             }
         }

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum FacingDirection { Down = 0, Right = 1, Left = 2, Up = 3 }
 public class TopDownBaseCharacter : MonoBehaviour
 {
+
     //for this script, we are going to have four different states, for the different directions the character will face
-    public enum FacingDirection { Down = 0, Right = 1, Left = 2, Up = 3 }
     public FacingDirection currentDirection = 0;
 
     //for each direction, we will have to activate and deactivate different objects, and control that object's animator
