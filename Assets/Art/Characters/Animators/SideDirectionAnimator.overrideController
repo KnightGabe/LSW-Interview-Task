@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SideDirectionAnimator
+  m_Controller: {fileID: 9100000, guid: bc86fc2ef38d644478ca6e912bdffeb6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 32ce476a2d6c8be4f83faceea16447b5, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c5973f7d33323ba4c99409c527ae67d9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c2f9d8fee51fe784dafcf518a76fffad, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 655ee250b2eb1f246a72e93274b0084f, type: 2}
