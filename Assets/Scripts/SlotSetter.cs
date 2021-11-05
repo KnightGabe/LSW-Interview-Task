@@ -10,7 +10,7 @@ public class SlotSetter : MonoBehaviour
     //need to specify the direction to distinguish between sprite types
     public FacingDirection direction;
 
-    public void UpdateSlots(ClothingItem[] currentClothes)
+    public void UpdateSlots(List<ClothingItem> currentClothes)
     {
         //first, visually deactivate all slots
         foreach (var item in slotRenderers)
@@ -20,7 +20,7 @@ public class SlotSetter : MonoBehaviour
         }
 
         //check the input array for every slot occupied and then update the sprite renderers
-        for (int i = 0; i < currentClothes.Length; i++)
+        for (int i = 0; i < currentClothes.Count; i++)
         {
             for (int j = 0; j < currentClothes[i].assetReference.slots.Length; j++)
             {

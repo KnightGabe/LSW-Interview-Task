@@ -34,5 +34,5 @@ MonoBehaviour:
   - {fileID: 21300482, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
   value: 10
   tintable: 1
-  previewPrefab: {fileID: 1267693680209749810, guid: a5fa0d967ef7c4243b4c6fff808a7015,
+  previewPrefab: {fileID: 8024389192188754675, guid: a5fa0d967ef7c4243b4c6fff808a7015,
     type: 3}

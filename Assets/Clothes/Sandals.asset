@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e58a06a6d1b2b4ab202b97026585f0, type: 3}
+  m_Name: Sandals
+  m_EditorClassIdentifier: 
+  displayName: Sandals
+  slots: 0900000003000000
+  downSprites:
+  - {fileID: 21300402, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300398, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  upSprites:
+  - {fileID: 21300740, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300736, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  sideSprites:
+  - {fileID: 21300584, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300580, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  value: 5
+  tintable: 0
+  previewPrefab: {fileID: 7143569374866721549, guid: c3e4f85a4e8751944828b254859311c6,
+    type: 3}

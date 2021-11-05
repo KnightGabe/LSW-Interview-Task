@@ -20,6 +20,8 @@ public class TopDownCharacterController : TopDownBaseCharacter
     //reference to player equipment inventory
     public CharacterWardrobe equipment;
 
+    public int gold;
+
     private void Awake()
     {
         instance = this;
@@ -30,7 +32,7 @@ public class TopDownCharacterController : TopDownBaseCharacter
         //we will listen for player input and use it for movement, state management and animation, but only if player input is on
         if (canMove)
         {
-            Vector2 movAxis = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            Vector2 movAxis = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
             ManageState(movAxis);
             MoveCharacter(movAxis);
         }

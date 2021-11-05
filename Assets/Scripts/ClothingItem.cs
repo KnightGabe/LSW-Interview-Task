@@ -7,5 +7,7 @@ public class ClothingItem : MonoBehaviour
 {
 
     public Clothing assetReference;
-    public Color colorTint;
+    public Color colorTint = Color.white;
+
+    
 }

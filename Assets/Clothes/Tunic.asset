@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e58a06a6d1b2b4ab202b97026585f0, type: 3}
+  m_Name: Tunic
+  m_EditorClassIdentifier: 
+  displayName: Tunic
+  slots: 02000000080000000e0000000f0000000100000007000000
+  downSprites:
+  - {fileID: 21300310, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300322, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300358, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300362, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300302, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300314, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  upSprites:
+  - {fileID: 21300682, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300686, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300714, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300718, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300316, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300304, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  sideSprites:
+  - {fileID: 21300506, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300514, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300546, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300550, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300502, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300510, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  value: 15
+  tintable: 0
+  previewPrefab: {fileID: -3488529457443438518, guid: d8ca8875daf281c4cbcec7100365bc5c,
+    type: 3}

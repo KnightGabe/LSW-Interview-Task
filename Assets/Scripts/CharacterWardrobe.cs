@@ -19,17 +19,14 @@ public class CharacterWardrobe : MonoBehaviour
     //this stores the setters for each facing direction
     public SlotSetter[] slots;
 
+    public System.Action<List<ClothingItem>> onEquipmentChanged;
+
     public void Start()
     {
         //initialize the player's clothes based on a pre-supplied array
         for (int i = 0; i < startingClothes.Length; i++)
         {
-            ClothingItem newPiece = new GameObject(startingClothes[i].name).AddComponent<ClothingItem>();
-            newPiece.assetReference = startingClothes[i];
-            if (startingClothes[i].tintable)
-                newPiece.colorTint = startingTint[i];
-            else
-                newPiece.colorTint = Color.white;
+            ClothingItem newPiece = startingClothes[i].CreateInstance();
             equippedClothing.Add(newPiece);
         }
         foreach (var item in CheckForOverlap())
@@ -38,8 +35,9 @@ public class CharacterWardrobe : MonoBehaviour
         }
         for (int i = 0; i < slots.Length; i++)
         {
-            slots[i].UpdateSlots(equippedClothing.ToArray());
+            onEquipmentChanged += slots[i].UpdateSlots;
         }
+        onEquipmentChanged?.Invoke(equippedClothing);
     }
 
     /// <summary>
@@ -99,6 +97,17 @@ public class CharacterWardrobe : MonoBehaviour
         return overlaps;
     }
 
+    /// <summary>
+    /// This function only updates the visuals without changing the actual equipment list
+    /// </summary>
+    public void PreviewClothing(List<ClothingItem> tempClothes)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            slots[i].UpdateSlots(tempClothes);
+        }
+    }
+
     public void EquipPiece(ClothingItem piece)
     {
         //Check for and unequip overlapping clothes
@@ -112,19 +121,21 @@ public class CharacterWardrobe : MonoBehaviour
         if (availableClothing.Contains(piece))
             availableClothing.Remove(piece);
         //update the visual representation
-        for (int i = 0; i < slots.Length; i++)
-        {
-            slots[i].UpdateSlots(equippedClothing.ToArray());
-        }
+        onEquipmentChanged?.Invoke(equippedClothing);
     }
 
-    public void RemovePiece(ClothingItem piece)
+    public void UnequipPiece(ClothingItem piece)
     {
         equippedClothing.Remove(piece);
         availableClothing.Add(piece);
-        for (int i = 0; i < slots.Length; i++)
-        {
-            slots[i].UpdateSlots(equippedClothing.ToArray());
-        }
+        onEquipmentChanged?.Invoke(equippedClothing);
+    }
+    
+    public void RemovePiece(ClothingItem piece)
+    {
+        if (equippedClothing.Contains(piece))
+            equippedClothing.Remove(piece);
+        if (availableClothing.Contains(piece))
+            availableClothing.Remove(piece);
     }
 }

@@ -27,5 +27,23 @@ public class Clothing : ScriptableObject
     public bool tintable = false;
 
     //object to be instantiated to preview the item in menus
-    public GameObject previewPrefab;
+    public EquipmentButton previewPrefab;
+
+    public ClothingItem CreateInstance()
+    {
+        ClothingItem newPiece = new GameObject(displayName).AddComponent<ClothingItem>();
+        newPiece.assetReference = this;
+        if (tintable)
+            newPiece.colorTint = Color.white;
+        return newPiece;
+    }
+
+    public ClothingItem CreateInstance(Color color)
+    {
+        ClothingItem newPiece = new GameObject(displayName).AddComponent<ClothingItem>();
+        newPiece.assetReference = this;
+        if (tintable)
+            newPiece.colorTint = color;
+        return newPiece;
+    }
 }
