@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e58a06a6d1b2b4ab202b97026585f0, type: 3}
+  m_Name: PlateArmor
+  m_EditorClassIdentifier: 
+  displayName: Plate Armor
+  slots: 11000000120000000e0000000f0000000200000008000000
+  downSprites:
+  - {fileID: 21300410, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300412, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300224, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300226, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300330, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300336, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  upSprites:
+  - {fileID: 21300748, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300750, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300608, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300610, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300690, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300692, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  sideSprites:
+  - {fileID: 21300592, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300594, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300428, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300430, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300520, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  - {fileID: 21300524, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  value: 100
+  tintable: 0
+  previewPrefab: {fileID: 6790393584811049573, guid: e67dfa98269b57e448346e6e84fce161,
+    type: 3}

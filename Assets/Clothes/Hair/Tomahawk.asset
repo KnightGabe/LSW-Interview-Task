@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30e58a06a6d1b2b4ab202b97026585f0, type: 3}
+  m_Name: Tomahawk
+  m_EditorClassIdentifier: 
+  displayName: Tomahawk
+  slots: 13000000
+  downSprites:
+  - {fileID: 21301184, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  upSprites:
+  - {fileID: 21301188, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  sideSprites:
+  - {fileID: 21301178, guid: 7f55fd39ae3f7b7449fa3d2c516cc700, type: 3}
+  value: 20
+  tintable: 1
+  previewPrefab: {fileID: 7143569374866721549, guid: b6fe6e81ebc3bd14f93933495455dbb6,
+    type: 3}
